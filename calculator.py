@@ -27,7 +27,7 @@ def div(a, b): # raise ZeroDivisionError if a == 0
     return b / a
 def logarithm(a, b):# use math library/raise ValueError
 
-    if a == 1 or a <= 0 or b > 0:
+    if a == 1 or a <= 0 or b <= 0:
         raise ValueError("can't put those numbers there")
     return math.log(b, a)
 

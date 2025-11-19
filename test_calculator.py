@@ -1,3 +1,5 @@
+# https://github.com/miles20m/Lab11-MM.git
+
 import unittest
 from calculator import *
 
@@ -16,26 +18,26 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(subtract(0, 0), 0)
 
     ######## Partner 1
-    def test_multiply(self): # 3 assertions
+    def test_mul(self): # 3 assertions
     #     fill in code
-        self.assertEqual(multiply(2,3), 6)
-        self.assertEqual(multiply(-1,5), -5)
-        self.assertEqual(multiply(0,0), 0)
-    def test_divide(self): # 3 assertions
+        self.assertEqual(mul(2,3), 6)
+        self.assertEqual(mul(-1,5), -5)
+        self.assertEqual(mul(0,0), 0)
+    def test_div(self): # 3 assertions
     #     fill in code
     # ##########################
-        self.assertEqual(divide(2,12), 6)
-        self.assertAlmostEqual(divide(2,7), 3.5)
-        self.assertEqual(divide(1,0), 0)
+        self.assertEqual(div(2,12), 6)
+        self.assertAlmostEqual(div(2,7), 3.5)
+        self.assertEqual(div(1,0), 0)
 
     ######## Partner 2
-    def test_divide_by_zero(self): # 1 assertion
+    def test_div_by_zero(self): # 1 assertion
         # call division function inside, example:
         # with self.assertRaises(<INSERT_ERROR_TYPE>):
         #     div(0, 5)
     #     fill in code
         with self.assertRaises(ZeroDivisionError):
-            divide(0,2)
+            div(0,2)
 
     def test_logarithm(self): # 3 assertions
     #     fill in code
@@ -79,4 +81,4 @@ class TestCalculator(unittest.TestCase):
 
 # Do not touch this
 if __name__ == "__main__":
-    unittest.main() 
+    unittest.main()

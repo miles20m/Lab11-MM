@@ -18,12 +18,12 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(subtract(0, 0), 0)
 
     ######## Partner 1
-    def test_mul(self): # 3 assertions
+    def test_multiply(self): # 3 assertions
     #     fill in code
         self.assertEqual(mul(2,3), 6)
         self.assertEqual(mul(-1,5), -5)
         self.assertEqual(mul(0,0), 0)
-    def test_div(self): # 3 assertions
+    def test_divide(self): # 3 assertions
     #     fill in code
     # ##########################
         self.assertEqual(div(2,12), 6)
@@ -31,7 +31,7 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(div(1,0), 0)
 
     ######## Partner 2
-    def test_div_by_zero(self): # 1 assertion
+    def test_divide_by_zero(self): # 1 assertion
         # call division function inside, example:
         # with self.assertRaises(<INSERT_ERROR_TYPE>):
         #     div(0, 5)

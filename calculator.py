@@ -1,3 +1,4 @@
+# https://github.com/miles20m/Lab11-MM.git
 """
 calculator.py
 - Defines functions used to create a simple calculator
@@ -18,12 +19,12 @@ def add(a, b):
 
 def subtract(a, b):
     return a - b
-def multiply(a, b):
+def mul(a, b):
     return a * b
-def divide(a, b): # raise ZeroDivisionError if a == 0
+def div(a, b): # raise ZeroDivisionError if a == 0
     if a == 0:
         raise ZeroDivisionError("Cannot divide by 0!")
-
+    return b / a
 def logarithm(a, b):# use math library/raise ValueError
 
     if a == 1 or a <= 0 or b > 0:
@@ -31,7 +32,7 @@ def logarithm(a, b):# use math library/raise ValueError
     return math.log(b, a)
 
 
-def exponent(a, b):
+def exp(a, b):
     return a ** b
 
 
